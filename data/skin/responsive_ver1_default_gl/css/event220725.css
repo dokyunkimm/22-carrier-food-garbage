@@ -1,0 +1,584 @@
+@charset "utf-8";
+
+/* 영어 폰트 */
+/* 고딕 */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/* 필기체 */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+
+/* CSS Document */
+#layout_body {padding-bottom:0 !important;}
+#layout_wrap {min-width:0px !important;}
+.micro2 {overflow-x:hidden;}
+.micro2 * {box-sizing:content-box; letter-spacing:inherit;}
+#wrap {max-width:none;}
+img {max-width:100%; vertical-align:middle; border:none; outline:none; }
+mark {background: transparent;}
+*{box-sizing: border-box; letter-spacing: -0.04em;}
+
+/* reset */
+.sound_only {display:block; overflow:hidden; position:absolute !important; left:-9999px; width:1px; height:1px; font-size:0; line-height:0; text-indent:-9999px;}
+
+
+/* 헤더 */
+#wizWrp #header {display:inline-block; vertical-align:middle; position:fixed; left:5.2083vw; top:4.1667vw; right:5.2083vw; z-index:999;}
+#wizWrp #header .h_wrap {display:inline-block; vertical-align:middle; width:100%;}
+#wizWrp #header .h_wrap .h_logo {display:inline-block; vertical-align:middle; position:absolute; left:0; top:0; width:100px; height:40px; transition:0.3s; -webkit-transition:0.3s;}
+#wizWrp #header .h_wrap .h_logo a {display:inline-block; vertical-align:middle; position:relative; width:100%; height:100%; background-image:url("../images/micro/logo.png"); background-repeat:no-repeat; background-position:center; background-size:100% auto; transition:0.3s; -webkit-transition:0.3s;}
+#wizWrp #header .h_wrap .h_slogan {display:inline-block; vertical-align:middle; position:absolute; right:0; top:0; width:156px; height: 28px; background-image:url("../images/event_220725/logo02.png"); background-repeat:no-repeat; background-position:center; background-size:100% auto; transition:0.3s; -webkit-transition:0.3s;}
+#wizWrp #header .h_wrap .h_slogan.on {background-image:url("../images/event_220725/logo02on.png"); background-repeat:no-repeat; background-position:center; background-size:100% auto;}
+
+/* 사이드 */
+#wizWrp #aside {display:inline-block; vertical-align:middle; position:fixed; left:5.2083vw; bottom:4.1667vw; right:5.2083vw; z-index:999;}
+#wizWrp #aside .a_copyright {display:inline-block; vertical-align:middle; position:absolute; left:0; bottom:0; opacity:1; pointer-events:none; transition:0.3s; -webkit-transition:0.3s;}
+#wizWrp #aside .a_copyright p {display:inline-block; vertical-align:middle; float:left; width:200px; height:200px; line-height:25px; font-family:'Montserrat', sans-serif; font-size:11px; font-weight:400; color:#23419a; letter-spacing:-0.5px; text-align:left; transform:rotate(-90deg); transition:0.3s; -webkit-transition:0.3s;}
+#wizWrp #aside .a_copyright mark {font-weight:800; color:#23419a; transition:0.3s; -webkit-transition:0.3s;}
+#wizWrp #aside .a_apply {display:inline-block; width:120px; height:120px; margin-right: -25px; vertical-align:middle; position:absolute; right:0; bottom:0; z-index:999; transition:0.3s; -webkit-transition:0.3s;}
+/* #wizWrp #aside .a_apply ul {display:inline-block; vertical-align:middle; width:120px;}
+#wizWrp #aside .a_apply li {display:inline-block; vertical-align:middle; width:100%; margin-top:10px;}
+#wizWrp #aside .a_apply li:first-child {margin-top:0;} */
+#wizWrp #aside .a_apply a {display:inline-block; width: 100%; height: 100%; text-align:center; vertical-align:middle; position:relative; border-radius:60px; background-color:#23419a; box-shadow:0 15px 30px rgba(35, 65, 154, 0.3); transform:scale(1); transition:0.3s; -webkit-transition:0.3s;}
+#wizWrp #aside .a_apply a:hover {z-index:1; transform:scale(1.2) rotate(15deg);}
+#wizWrp #aside .a_apply a:before {content:""; position:absolute; left:4px; right:4px; top:4px; bottom:4px; border:#fff solid 1px; border-radius:60px; opacity:0.1;}
+#wizWrp #aside .a_apply a span {display:inline-block; vertical-align:middle; float:left; width:100%; margin:30px 0; font-size:17px; font-weight:400; color:#b2c0eb; line-height:30px; letter-spacing:-1px;}
+#wizWrp #aside .a_apply a mark {display:inline-block; vertical-align:middle; width:100%; font-size:20px; font-weight:700; color:#fff;}
+#wizWrp #aside .a_apply a mark br {display: none;}
+#wizWrp #aside .a_apply a.t2 {background-color:#f7cf46; box-shadow:0 15px 30px rgba(247, 207, 70, 0.3);}
+#wizWrp #aside.on .a_apply {margin-right: 0; width: 70px; height: 70px; bottom: 60px; right: 0;}
+#wizWrp #aside.on .a_apply a.t2 span {margin: 17px 0;}
+#wizWrp #aside.on .a_apply a.t2 i {display: none;}
+#wizWrp #aside.on .a_apply a.t2 mark {font-size: 16px; line-height: 20px;}
+#wizWrp #aside.on .a_apply a.t2 mark br {display: inline-block;}
+#wizWrp #aside .a_apply a.t2:before {border-color:#e7ba20; opacity:1;}
+#wizWrp #aside .a_apply a.t2 span {color:#4e4033;}
+#wizWrp #aside .a_apply a.t2 mark {color:#4e4033;}
+/* top 버튼 */
+#wizWrp #aside .tpBtn {display:inline-block; vertical-align:middle; position:absolute; right:0; bottom:0; z-index:998; width:70px; height:70px; opacity:0; pointer-events:none; transition:0.3s; -webkit-transition:0.3s;}
+#wizWrp #aside.on .tpBtn {opacity:1; pointer-events:auto;}
+#wizWrp #aside .tpBtn a {display:inline-block; vertical-align:middle; position:relative; width:100%; height:100%; background-color:#fff; border-radius:50%; box-shadow:0 5px 10px rgba(28, 28, 32, 0.06);}
+#wizWrp #aside .tpBtn a:before {content:""; position:absolute; left:50%; top:50%; width:8px; height:8px; margin-top:-4px; margin-left:-5px; border-top:#4c3e31 solid 2px; border-right:#4c3e31 solid 2px; transform:rotate(-45deg); transition:0.3s; -webkit-transition:0.3s;}
+
+
+/* 영문 폰트 */
+#wizWrp .krlFnt{font-family: 'Karla', sans-serif;}
+#wizWrp .cvtFnt1{font-family: 'Caveat', cursive;}
+
+/* 비디오 공통 */
+#wizWrp .vdThm {position: relative;}
+#wizWrp .vertiVideoController {display: inline-block; z-index: 3; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); max-width: 100px;transition:opacity 0.25s;opacity:1;}
+#wizWrp .vertiVideoController.on{opacity:0;pointer-events: none;}
+/* width: 22.73%; height: 22.73px; */
+#wizWrp .vertiVideoController > img {width: 100%;}
+
+/* 공통 리스트 dott 없애기 */
+#wizWrp .dtNone::before {content: none !important;}
+
+/* 공통 모바일 br */
+#wizWrp .mobEnter{display: none;}
+
+
+
+
+/* 컨텐츠 wrap */
+#wizWrp #contents {background: #fff;}
+
+/* 메인 비쥬얼 */
+#wizWrp #contents .wizMain {position: relative;}
+#wizWrp #contents .wizMain .mainBannerBg {width: 100%; height: 970px; background-image: url(../images/event_220725/mainBanner.png); background-size: auto 100%; background-repeat: no-repeat; background-position: center center;}
+#wizWrp #contents .wizMain .mainBannerTtl {position: absolute; left: 50%; bottom: 40%; margin-left: -665px; margin-bottom: -180px; /*transform: translate(-50%, 50%);*/ z-index: 2; max-width: 1330px; width: calc(100% - 40px); height: 360px; background-image: url(../images/event_220725/processor_main_title.png); background-repeat: no-repeat; background-position: left center; background-size: auto 100%;}
+
+/* simple & easy 섹션 */
+#wizWrp .wizSimple {padding: 10% 0 6%; background-image: url(../images/event_220725/simple_section_deco.png); background-repeat: no-repeat; background-position: center center;}
+#wizWrp .vertiVideo {position: relative; z-index: 2; max-width: 560px; width: calc(100% - 40px); margin: 0 auto;}
+#wizWrp .vertiVideo .vdThm01 {}
+#wizWrp .vertiVideo .vdThm01::before {position: absolute; left: 50%; bottom: -16%; z-index: -1; transform: translateX(-50%); content: ''; display: block; max-width: 698px; width: calc(100% + 139px); height: 0; padding-bottom: 101%; background: url(../images/event_220725/simple_pic_deco.png) no-repeat center bottom; background-size: 100% auto;}
+#wizWrp .vertiVideo .vdThm01 > img{width: 100%; opacity:1; position: relative; z-index: 2;}
+#wizWrp .vertiVideo .vdThm01 > video{width: 100%;position:absolute;top:0;left:0;height:100%; object-fit: cover; object-position: center 26%;}
+#wizWrp .vertiVideo::before {position: absolute; top: 0; left: -22%; z-index: 3; content: ''; display: inline-block; max-width: 18%; width: 100%; height: 51%; background: url(../images/event_220725/simple_txt01.png) no-repeat; background-size: auto 100%;}
+#wizWrp .vertiVideo::after {position: absolute; right: -17%; bottom: -16%; z-index: 3; content: ''; max-width: 76%; width: 100%; height: 17.6%; background: url(../images/event_220725/simple_txt02.png) no-repeat; background-size: 100% auto;}
+
+#wizWrp .vertiVideo > video {position: absolute; left: 50%; top: 0; height: 100%; }
+
+
+
+/* 문구 "나도 모르게 알아서 사라지는 ~ ", "bio food processor ~ " */
+#wizWrp .sentence01 {margin: 11% 20px 8.6%; font-size: 1.4vw; color: rgba(0,0,0,0.25); letter-spacing: 0.5rem; line-height: 1.4vw; text-align: center;}
+#wizWrp .sentence02 {margin: 6.3% 20px 10.5%; font-size: 1.3vw; color: rgba(0,0,0,0.25); letter-spacing: 0.7rem; line-height: 1.5vw; text-align: center; font-weight: 600;}
+
+/* wizBasic 섹션 */
+#wizWrp .wizBasic > div {display: flex; align-items: center; justify-content: center; width: calc(100% - 80px); margin: 0 auto;}
+#wizWrp .wizBasic > div .basic_pic {margin-right: 6%;}
+
+/* Eco-friend 섹션 */
+#wizWrp .wizEcoFriend {padding-bottom: 10.5%;}
+#wizWrp .wizEcoFriend > div {max-width: 1240px; width: calc(100% - 40px); margin: 0 auto; display: flex; }
+#wizWrp .wizEcoFriend > div > div {width: calc(100% / 2 - 12.5%);}
+#wizWrp .ecoFrndLft {margin-right: 25%;}
+#wizWrp .ecoFrndPctr {margin-top: 17%;}
+
+#wizWrp .ecoFriendVideo {position: relative;}
+#wizWrp .vdThm02 {max-width: 440px; width: 100%; margin-left: auto; margin-top: 25.5%; position: relative; z-index: 2;}
+#wizWrp .ecoFriendVideo .vdThm02 > video{position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
+#wizWrp .ecoFriendVideo .vdThm02 > img{position: relative; z-index: 2;}
+#wizWrp .vdThm02::before {z-index: 3; position: absolute; left: -64%; bottom: -8%; display: block; content: ''; width: 76%; height: 68%; background-image: url(../images/event_220725/sec03_celebrity_pic.png); background-repeat: no-repeat; background-size: 100% auto;}
+#wizWrp .vdThm02::after {z-index: -1; content: ''; display: inline-block; position: absolute; top: -18%; right: -35%; width: 80%; height: 61%; background-image: url(../images/event_220725/video02_deco.png); background-size: 100% auto; background-repeat: no-repeat; background-position: center center; }
+#wizWrp .ecoFriendVideo > video {position: absolute; left: 0; top: 0;}
+
+/* SNS 인스타 섹션 */
+#wizWrp .wizSns {padding: 8.4% 0 5%; background-color: #f8ead9;}
+#wizWrp .wizSnsInner {max-width: 1420px; width: calc(100% - 40px); margin: 0 auto;}
+#wizWrp .wizSnsTit {font-size: 2.6vw; line-height: 1.2;}
+#wizWrp .wizSnsTit > strong {font-weight: 500; color: #cea777;}
+#wizWrp .wizSnsTit > span {font-weight: 100; color: #434548;}
+
+#wizWrp #contents .wizSns .wizInsta {padding: 4% 0 8%; position: relative;}
+#wizWrp #contents .wizSns .wizInsta::before {position: absolute; left: 50%; bottom: 5%; transform: translateX(-50%); content: ''; display: block; width: 100%; height: 14.3%; background-image: url(../images/event_220725/klarwind_wiz_txt.png); background-repeat: no-repeat; background-position: center center; background-size: auto 100%;}
+#wizWrp #contents .wizSns ul {display:inline-block; vertical-align:middle; position:relative; z-index:1; width:100%;}
+#wizWrp #contents .wizSns ul:before {content:""; position:absolute; right:-7%; top:-6%; width:11vw; height:11vw; background-image:url("../images/event_220725/deco_txt_circle.png"); background-repeat:no-repeat; background-position:center; background-size:auto 100%; transform:rotate(0deg); -webkit-transform:rotate(0deg);
+animation-name:deco_txt_circle2; animation-duration:10s; animation-iteration-count:infinite; animation-timing-function:linear;}
+@keyframes deco_txt_circle2 { 0% {transform:rotate(0deg); -webkit-transform:rotate(0deg);} 100% {transform:rotate(360deg); -webkit-transform:rotate(360deg);} }
+#wizWrp #contents .wizSns li {display:inline-block; vertical-align:middle; position:relative; float:left; overflow:hidden; width:30.99%; margin-left:3.515%; border-radius:2vw; background-color:#fff; box-shadow:0 10px 30px rgba(0,0,0,0.1); transform:scale(1); transition:0.3s; -webkit-transition:0.3s;}
+#wizWrp #contents .wizSns li:first-child {margin-top:2.5%; margin-left:0;}
+#wizWrp #contents .wizSns li:nth-child(2) {margin-top:6%;}
+#wizWrp #contents .wizSns li:hover {transform:scale(1.1);}
+#wizWrp #contents .wizSns a {position:absolute; left:0; right:0; top:0; bottom:0; z-index:1;}
+#wizWrp #contents .wizSns .insta_box {display:inline-block; vertical-align:middle; width:100%;}
+#wizWrp #contents .wizSns .insta_pic {display:inline-block; vertical-align:middle; position:relative; width:100%;}
+#wizWrp #contents .wizSns .insta_pic:before {content:""; position:absolute; right:1.56vw; top:1.04vw; width:2.60vw; height:2.60vw; border-radius:50%; background-color:#fff; background-image:url("../images/event_220725/icon_instagram.png"); background-repeat:no-repeat; background-position:center; background-size:auto 26px;}
+#wizWrp #contents .wizSns .insta_icon {display:inline-block; vertical-align:middle; width:100%; margin-top:4%; padding:0 6.82%; text-align:left;}
+#wizWrp #contents .wizSns .insta_icon i {display:inline-block; vertical-align:middle; float:left; width:25px; height:23px; background-repeat:no-repeat; background-size: auto 100%; background-position:center center;}
+#wizWrp #contents .wizSns .insta_icon i.i01 {margin-right: 1.8%; background-image: url(../images/event_220725/icon_heart.png);}
+#wizWrp #contents .wizSns .insta_icon i.i02 {background-image: url(../images/event_220725/icon_talk.png);}
+#wizWrp #contents .wizSns .insta_icon i.i03 {float: right; background-image: url(../images/event_220725/icon_save.png);}
+#wizWrp #contents .wizSns .insta_txt {display:inline-block; vertical-align:middle; width:100%; padding:0 6.82% 10%; text-align:left;}
+#wizWrp #contents .wizSns .insta_txt strong {display:inline-block; vertical-align:middle; width:100%; margin:2% 0; font-size:1.04vw; font-weight:600; color:#27292d; line-height:1.56vw; letter-spacing:-0.05vw;}
+#wizWrp #contents .wizSns .insta_txt p {font-size:1.05vw; font-weight:300; color:#27292d; line-height:1.5; letter-spacing:-0.1vw; word-break: keep-all;}
+
+/* MY Sweet RECYCLE Life 섹션 */
+#wizWrp .wizFnc {padding: 8.3% 0 5.3%;}
+#wizWrp .wizFncTit {max-width: 1240px; width: calc(100% - 40px); margin: 0 auto; text-align: center;}
+#wizWrp .subTit {margin: 3.2% 0 8%; font-size: 2.08vw; font-weight: 100; line-height: 2.08vw;}
+#wizWrp .subTit > b {font-weight: 500;}
+#wizWrp .wizFncImg {max-width: 1240px; width: calc(100% - 40px); margin: 0 auto;}
+
+#wizWrp .wizFncLst {display: flex; flex-wrap: wrap; max-width: 1420px; width: calc(100% - 40px); margin: 5.7% auto 5.2%;}
+#wizWrp .wizFncLst > li {width: calc(100% / 4 - 2.1%); background: #fff; box-shadow: 0px 0px 80px 0px rgba(202, 202, 202, 0.47); margin-right: 2.8%; padding: 2.6vw 1.56vw; text-align: center;}
+#wizWrp .wizFncLst > li:last-child {margin-right: 0;}
+#wizWrp .wizFncLst > li .tit {font-size: 1.6vw; line-height: 1.3; font-weight: 500; color: #434548; margin-bottom: 14%;}
+#wizWrp .wizFncLst > li .tit .clrYllw {color: #ffcc2d;}
+#wizWrp .wizFncLst > li .txt {font-size: 1vw; font-weight: 300; line-height: 1.5; color: #434548;}
+/* wiz 3Color */
+#wizWrp .wizFncColor {display: flex; align-items: center; justify-content: flex-end;}
+#wizWrp .wizFncColor .leftBx {margin-right: 5.2%;}
+#wizWrp .wizFncColor .clrTxt strong {font-size: 4.2vw; font-weight: 800; color: #cea777;}
+#wizWrp .wizFncColor .clrTxt em {display: block; margin-top: 6.7%; font-size: 2.1vw; font-weight: 100; line-height: 1.5; color: #434548;}
+#wizWrp .wizFncColor .clrTxt em > b {font-weight: 500;}
+#wizWrp .wizFncColor a {display:inline-block; vertical-align:middle; width:12.5vw; height:3.85vw; margin-top:2.86vw; border-radius:4vw; background-color:#ffcc2d; font-size:1.15vw; font-weight:700; color:#fff; line-height:3.85vw; text-align:center; transition:0.3s; -webkit-transition:0.3s;}
+#wizWrp .wizFncColor .clrImg {width: 54.4%;}
+#wizWrp .wizFncColor .clrImg img {width: 100%;}
+
+/* 이벤트 섹션 */
+#wizWrp .wizEvt {}
+#wizWrp .evtCnts {padding: 8.36% 0 5.23%; background: #f8ead9;}
+#wizWrp .wizEvtTxt {text-align: center;}
+#wizWrp .wizEvtTxt .tit {margin-bottom: 2.42%; font-size: 2.6vw; font-weight: 500; line-height: 2.6vw; color: #6a5b4a;}
+#wizWrp .wizEvtTxt .tit > span {color: #cea777;}
+#wizWrp .wizEvtTxt .tit > i {display: inline-block; padding: 1.13%; background-image: url(../images/event_220725/plus_icon.png); background-repeat: no-repeat; background-size: 100% auto;}
+#wizWrp .wizEvtTxt .subTxt {margin-bottom: 2.42%; font-size: 1.25vw; font-weight: 300; line-height: 1.25vw; color: #434548;}
+#wizWrp .wizEvtTxt .subTxt > i {font-style: italic;}
+#wizWrp .wizEvtTxt .date {margin-bottom: 8%; line-height: 1.67vw;}
+#wizWrp .wizEvtTxt .date mark {z-index: 2; position: relative; display: inline-block; font-size: 1.67vw; color: #87745d;}
+#wizWrp .wizEvtTxt .date mark::before {content:""; position:absolute; left:0; right:0; bottom:0.1vw; z-index:-1; height:0.57vw; background-color:#bf9664; opacity:0.15;}
+
+#wizWrp .wizEvtTyp {max-width: 1500px; width: calc(100% - 40px); margin: 0 auto;}
+#wizWrp .wizEvtTyp > p {text-align: center;}
+#wizWrp .wizEvtTyp > p > strong {display: block; width: 100%; font-size: 1.67vw; font-weight: 500; color: #cea777; line-height: 1.1;}
+#wizWrp .wizEvtTyp > p > span {font-size: 1.05vw; font-weight: 400; color: #a29b93; line-height: 1.7;}
+
+#wizWrp .wizEvtTyp .mbSaleTxt{margin: 5% 0; font-size: 1.25vw; color: #434548; font-weight: 500;}
+#wizWrp .wizEvtTyp .mbSaleTxt > span{font-size: inherit; color: #214090; font-weight: 500;}
+
+#wizWrp .wizEvtTyp .typImg {max-width: 499px; width: 40%;}
+#wizWrp .wizEvtTyp .typImg img {width: 100%;}
+#wizWrp .typ1Img {position: relative; z-index: 2;}
+#wizWrp .typ1Img::before {content: ''; display: block; position: absolute; z-index: -1; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 65%; height: 36%; background-image: url(../images/event_220725/promotion_txt.png); background-size: 100% auto; background-repeat: no-repeat; }
+#wizWrp .typ1Img > div {margin: 0 auto;}
+
+#wizWrp .wizEvtTyp > ul {display: flex; width: 100%; margin: 0 auto;}
+#wizWrp .wizEvtTyp > ul > li {position: relative;}
+#wizWrp .wizEvtTyp > ul > li::before {position: absolute; right: -3%; top: 50%; transform: translateY(-50%); content: ''; display: inline-block; padding: 2.82%; background-image: url(../images/event_220725/plus_icon.png); background-repeat: no-repeat; background-size: 100% auto;}
+#wizWrp .wizEvtTyp > ul > li:last-child:before {content: none;}
+
+#wizWrp .caution {}
+#wizWrp .caution > p {position: relative; margin-left: calc(2.67% + 2.5%); padding-left: 2.5%; font-size: 0.94vw; font-weight: 300; line-height: 1.7; color: #434548;}
+#wizWrp .caution > p::before {position: absolute; left: 0; top: 0; content: ''; padding: 0.89%; background-image: url(../images/event_220725/caution_icon.png); background-size: 100% auto; background-repeat: no-repeat;}
+#wizWrp .caution > p > span {font-weight: 400;}
+
+#wizWrp .wizEvtBktTit {margin: 5.23% auto; text-align: center; width: calc(100% - 40px);}
+#wizWrp .wizEvtBktTit .tit {margin-bottom: 2.1%;}
+#wizWrp .wizEvtBktTit .tit {}
+#wizWrp .wizEvtBktTit .tit > img {width: 16%;}
+#wizWrp .wizEvtBktTit .txt {font-size: 1.15vw; line-height: 1.8; font-weight: 300; color: #434548;}
+#wizWrp .wizEvtBktTit .txt > span {font-size: 0.94vw;}
+
+#wizWrp .bktHowTo {max-width: 1420px; width: calc(100% - 40px); margin: 0 auto; display: flex; align-items: flex-start;}
+#wizWrp .bktHowTo .lft {width: 29%; margin-right: 9.2%;}
+#wizWrp .bktHowTo .lft {max-width: 280px;}
+#wizWrp .bktHowTo .lft .tit {margin-bottom: 18%;}
+#wizWrp .bktHowTo .lft .tit > div {width: 96%;}
+#wizWrp .bktHowTo .lft .tit > div img {width: 100%;}
+#wizWrp .bktHowTo .lft .tit > span {display: inline-block; margin-top: 6.5%; font-size: 1.88vw; line-height: 1.88vw;}
+
+#wizWrp .bktHowLst {max-width: 1024px; width: 100%; display: inline-flex; position: relative; margin-top: 4.2%;}
+#wizWrp .bktHowLst::before {content: ''; display: block; position: absolute; width: 93%; height: 48%; right: -12%; bottom: -48%; background-image: url(../images/event_220725/klarwind.png); background-size: auto 100%; background-position: center right; background-repeat: no-repeat;}
+#wizWrp .bktHowLst > li {width: calc(100% / 3 - 1.5% ); margin-right: 3%; box-shadow: 0px 0px 80px 0px rgb(202 202 202 / 40%); background: #fbf2e8;}
+#wizWrp .bktHowLst > li:last-child {margin-right: 0;}
+#wizWrp .bktHowLst > li .stp {position: relative; padding: 2.1vw 1.56vw 1.51vw; font-size: 1.15vw; line-height: 1.15vw; font-weight: 800; color: #cea777;}
+#wizWrp .bktHowLst > li .stp::before {content: ''; position: absolute; left: 0; bottom: 0; display: block; width: 80%; height: 2px; background: #cea777;}
+#wizWrp .bktHowLst > li > p {padding: 1.5vw 2vw; font-size: 1.05vw; font-weight: 300; line-height: 1.6; word-break: keep-all;}
+
+#wizWrp .wizEvtCaution{padding: 5.23% 0; background: #fcf5ed;}
+#wizWrp .wizEvtCaution .cautionInner {max-width: 1240px; width: calc(100% - 40px); margin: 0 auto;}
+#wizWrp .wizEvtCaution h3 {font-size: 1.67vw; font-weight: 500; color: #cea777; line-height: 1.25; margin-top: 4.2%; margin-bottom: 1.6%;}
+#wizWrp .wizEvtCaution .ctnTtl01 {margin-top: 0;}
+#wizWrp .wizEvtCaution ul > li {position: relative; padding-left: 0.8%; font-size: 0.94vw; font-weight: 300; line-height: 1.67; color: #434548; word-break: keep-all;}
+#wizWrp .wizEvtCaution ul > li::before {position: absolute; top: 35%; left: 0; content: ''; display: inline-block; width: 4px; height: 4px; border-radius: 50%; background: #434548;}
+
+/* table contents */
+#wizWrp .cautonTbl h4 {margin-bottom: 2.42%; font-size: 1.25vw; font-weight: 500; color: #87745d; line-height: 1.25vw;}
+#wizWrp .cautonTbl.cautonTbl01 {margin-bottom: 4%;}
+#wizWrp .cautonTbl.cautonTbl01 table {width: 50%;}
+#wizWrp .cautonTbl table {text-align: center; border-collapse: collapse; width: 100%;}
+#wizWrp .cautonTbl table tr th {height: 45px; font-size: 0.94vw; font-weight: 500; color: #fff; background: #cea777; padding: 5px;}
+#wizWrp .cautonTbl table tr td {height: 45px; font-size: 0.94vw; font-weight: 400; line-height: 1.3; border: 1px solid #cea777; color: #434548; padding: 5px;}
+#wizWrp .cautonTbl table tr td:first-child {border-left: 0;}
+#wizWrp .cautonTbl table tr td:last-child {border-right: 0;}
+
+@media screen and (max-width:1600px) {
+    /* 헤더 */
+    #wizWrp #header .h_wrap .h_logo {width:90px; height:36px;}
+    #wizWrp #header .h_wrap .h_slogan {width:150px; height:50px;}
+    
+    /* 사이드 */
+    /* #wizWrp #aside .a_apply ul {width:100px;}
+    #wizWrp #aside .a_apply a {width:100px; height:100px;}
+    #wizWrp #aside .a_apply a:before {left:3px; right:3px; top:3px; bottom:3px;}
+    #wizWrp #aside .a_apply a span {margin:25px 0; font-size:16px; line-height:25px; letter-spacing:-1px;}
+    #wizWrp #aside .a_apply a mark {font-size:18px;} */
+
+
+
+    /* simple & easy 섹션 */
+    #wizWrp #contents .wizSns ul:before {right: -1%;}
+
+    /* 이벤트 섹션 */
+    #wizWrp .bktHowLst::before {height: 30%; bottom: -30%; right: 0;}
+
+
+
+    
+    #wizWrp .wizBasic > div{width: 73%;}
+    #wizWrp .wizEcoFriend > div{width: 73%;}
+    #wizWrp .wizSnsInner{width: 73%;}
+    #wizWrp .wizFncTit{width: 73%;}
+    #wizWrp .wizFncImg{width: 73%;}
+    #wizWrp .wizFncLst{width: 73%;}
+    #wizWrp .wizEvtTyp{width: 73%;}
+    #wizWrp .wizEvtBktTit{width: 73%;}
+    #wizWrp .bktHowTo{width: 73%;}
+    #wizWrp .wizEvtCaution .cautionInner{width: 73%;}
+
+
+}
+
+@media screen and (max-width:1440px) {
+
+    /* 메인 비쥬얼 */
+    #wizWrp #contents .wizMain .mainBannerTtl {height: 300px; margin-left: -543px;}
+}
+
+@media screen and (max-width:1280px) {
+    /* 헤더 */
+    #wizWrp #header .h_wrap .h_logo {width:80px; height:32px;}
+    #wizWrp #header .h_wrap .h_slogan {width:120px; height:40px;}
+    
+    
+    /* 사이드 */
+    /* #wizWrp #aside .a_apply ul {width:80px;}
+    #wizWrp #aside .a_apply a {width:80px; height:80px;}
+    #wizWrp #aside .a_apply a:hover {transform:scale(1) rotate(0deg);}
+    #wizWrp #aside .a_apply a:before {left:2px; right:2px; top:2px; bottom:2px;}
+    #wizWrp #aside .a_apply a span {margin:20px 0; font-size:14px; line-height:20px; letter-spacing:-0.5px;}
+    #wizWrp #aside .a_apply a mark {font-size:16px;} */
+
+    /* 메인 비쥬얼 */
+    #wizWrp #contents .wizMain .mainBannerTtl {height: 260px; margin-left: -460px;}
+
+    
+}
+
+@media screen and (max-width:1024px) {
+    /* 헤더 */
+    #wizWrp #header {left:3.13vw; top:2.60vw; right:3.13vw;}
+    
+    
+    /* 사이드 */
+    #wizWrp #aside {left:3.13vw; bottom:2.60vw; right:3.13vw;}
+
+    /* 메인 비쥬얼 */
+    #wizWrp #contents .wizMain .mainBannerTtl {height: 220px; margin-left: -368px;}
+    #wizWrp #contents .wizMain .mainBannerBg {height: 700px;}
+
+    /* simple & easy 섹션 */
+    #wizWrp .vertiVideo{max-width: 356px;}
+    #wizWrp .vertiVideo::before {height: 40%; left: -19%;}
+    #wizWrp .vertiVideo::after {max-width: 50%; right: -5px; bottom: -17%;}
+
+    /* 문구 "나도 모르게 알아서 사라지는 ~ ", "bio food processor ~ " */
+    #wizWrp .sentence01 {font-size: 2vw;}
+    #wizWrp .sentence02 {font-size: 2vw;}
+
+    /* MY Sweet RECYCLE Life 섹션 */
+    #wizWrp .wizFncLst > li .tit {font-size: 18px; line-height: 25px; margin-bottom: 10%;}
+    #wizWrp .wizFncLst > li .txt {font-size: 14px; line-height: 20px;}
+    /* #wizWrp .wizFncLst > li .txt br{display: none;} */
+
+    /* SNS 인스타 섹션 */
+    #wizWrp .wizSnsTit {font-size: 2.8vw; line-height: 1.5;}
+    #wizWrp #contents .wizSns ul:before {width: 160px; height: 160px; left: 2%; bottom: 25%; right: auto; top: auto;}
+    #wizWrp #contents .wizSns li {border-radius: 1.04vw; float: left; margin-left: 2%; width: 48%;}
+    #wizWrp #contents .wizSns li:first-child {margin-top: 25%; margin-left: 0;}
+    #wizWrp #contents .wizSns li:nth-child(2) {margin-top: 0px;}
+    #wizWrp #contents .wizSns li:last-child {margin-top: 2%;}
+    #wizWrp #contents .wizSns .insta_pic:before {width: 30px; height: 30px; top: 15px; right: 15px; background-size: auto 15px;}
+    #wizWrp #contents .wizSns .insta_icon {margin-top: 5%;}
+    #wizWrp #contents .wizSns .insta_icon i {width: 22px; height: 19px;}
+    #wizWrp #contents .wizSns .insta_txt strong {margin: 2% 0; font-size: 16px; line-height: 25px; letter-spacing: -0.5px;}
+    #wizWrp #contents .wizSns .insta_txt p {font-size: 14px; line-height: 25px; letter-spacing: -0.5px;}
+    #wizWrp #contents .wizSns .wizInsta::before {width: 66%; bottom: -2%; background-size: 100% auto;}
+    
+    #wizWrp .wizFncColor .leftBx {text-align: center;}
+    #wizWrp .wizFncColor a {width: 140px; height: 40px; line-height: 40px; font-size: 15px; border-radius: 20px;}
+    
+    
+    #wizWrp .wizEvtCaution h3 {font-size: 20px; line-height: 25px;}
+    #wizWrp .wizEvtCaution h4 {font-size: 16px; line-height: 25px;}
+
+    #wizWrp .wizEvtCaution ul > li {font-size: 13px; line-height: 25px; padding-left: 10px;}
+    #wizWrp .wizEvtCaution ul > li::before {top: 10px;}
+
+    /* 이벤트 섹션 */
+    #wizWrp .evtCnts {padding: 80px 0;}
+    #wizWrp .wizEvtTyp > p > span {font-size: 12px;}
+
+    #wizWrp .caution > p {font-size: 13px;}
+    #wizWrp .caution > p::before {width: 16px; height: 16px; padding: 0; top: 3px;}
+
+    #wizWrp .wizEvtBktTit .txt {font-size: 14px;}
+    #wizWrp .wizEvtBktTit .txt > span {font-size: 13px;}
+
+    #wizWrp .bktHowLst::before{height: 22%; right: 0; bottom: -22%;}
+    #wizWrp .bktHowLst > li .stp {font-size: 18px;}
+    #wizWrp .bktHowLst > li > p {font-size: 14px;}
+    #wizWrp .bktHowLst > li > p br {display: none;}
+
+    /* table contents */
+    #wizWrp .cautonTbl table tr th {font-size: 13px;}
+    #wizWrp .cautonTbl table tr td {font-size: 13px;}
+    
+}
+
+@media screen and (max-width:768px) {
+    /* 메인 비쥬얼 */
+    #wizWrp #contents .wizMain .mainBannerTtl {height: 160px; margin-left: -265px; bottom: 50%;}
+    #wizWrp #contents .wizMain .mainBannerBg {height: 600px;}
+
+    /* 사이드 */
+    #wizWrp #aside .tpBtn {display: none;}
+    /* #wizWrp #aside .a_apply {width: 100px; height: 100px; margin-right: -15px;} 
+    #wizWrp #aside .a_apply a span {font-size: 14px; margin: 19px 0;}
+    #wizWrp #aside .a_apply a mark {font-size: 16px;} */
+
+    #wizWrp #aside .a_apply{margin-right: -15px;}
+    #wizWrp #aside .a_apply {margin-right: 0; width: 70px; height: 70px; bottom: 60px; right: 0;}
+    #wizWrp #aside .a_apply a.t2 span {margin: 17px 0;}
+    #wizWrp #aside .a_apply a.t2 i {display: none;}
+    #wizWrp #aside .a_apply a.t2 mark {font-size: 16px; line-height: 20px;}
+    #wizWrp #aside .a_apply a.t2 mark br {display: inline-block;}
+
+
+    /* simple & easy 섹션 */
+    #wizWrp .vertiVideo::before {height: 29%; left: -13%;}
+    #wizWrp .vertiVideo::after {max-width: 36%; right: -5px; bottom: -17%;}
+
+    /* 문구 "나도 모르게 알아서 사라지는 ~ ", "bio food processor ~ " */
+    #wizWrp .sentence02 {line-height: 20px;}
+
+    /* SNS 인스타 섹션 */
+    #wizWrp .wizSnsTit {line-height: 30px; letter-spacing: 1.5px;}
+    #wizWrp #contents .wizSns ul:before {width: 120px; height: 120px; left: auto; right: -10px; top: -47px;}
+    #wizWrp #contents .wizSns li {width: 100%; border-radius: 15px; margin-top: 20px; margin-left: 0;}
+    #wizWrp #contents .wizSns li:first-child {margin-top: 0;}
+    #wizWrp #contents .wizSns li:nth-child(2) {margin-top: 20px;}
+    #wizWrp #contents .wizSns li:last-child {margin-top: 20px;}
+    #wizWrp #contents .wizSns .insta_txt strong {font-size: 16px; line-height: 25px; margin: 2% 0; letter-spacing: -0.5px;}
+    #wizWrp #contents .wizSns .insta_txt p {font-size: 14px; line-height: 25px; letter-spacing: -0.5px;}
+    #wizWrp #contents .wizSns .wizInsta::before {height: 2%; bottom: 0.3%;}
+
+    /* MY Sweet RECYCLE Life 섹션 */
+    #wizWrp .wizFnc {padding: 8.3% 0 5.3%;}
+    #wizWrp .wizFncTit {max-width: 620px;}
+    #wizWrp .wizFncLst > li {width: 48%; margin-right: 4%; padding: 30px 15px;}
+    #wizWrp .wizFncLst > li:nth-child(2) {margin-right: 0;}
+    #wizWrp .wizFncLst > li:nth-child(3) {margin-top: 4%;}
+    #wizWrp .wizFncLst > li:last-child {margin-top: 4%;}
+    #wizWrp .wizFncLst > li .tit {font-size: 20px; line-height: 1.5;}
+    #wizWrp .wizFncLst > li .txt {font-size: 16px; line-height: 1.5;}
+    /* wiz 3Color */
+    /* #wizWrp .wizFncColor {flex-direction: column;}
+    #wizWrp .wizFncColor .clrImg {width: 100%; text-align: right;}
+    #wizWrp .wizFncColor .clrTxt strong {font-size: 30px;}
+    #wizWrp .wizFncColor .clrTxt em {} */
+
+    /* 이벤트 섹션 */
+    #wizWrp .evtCnts {padding: 100px 0;}
+    #wizWrp .wizEvtTxt .tit {}
+    #wizWrp .wizEvtTxt .subTxt {font-size: 16px; line-height: 26px;}
+    #wizWrp .wizEvtTxt .date mark {font-size: 14px;}
+    #wizWrp .wizEvtTyp > p > strong {font-size: 18px; line-height: 30px;}
+    #wizWrp .wizEvtTyp > p > span {font-size: 15px; line-height: 25px;}
+    #wizWrp .wizEvtTyp .mbSaleTxt{font-size: 16px; line-height: 26px;}
+    #wizWrp .wizEvtBktTit {margin: 50px auto 30px;}
+    #wizWrp .wizEvtBktTit .tit > img {width: 22%;}
+    #wizWrp .wizEvtBktTit .txt {font-size: 15px;}
+    #wizWrp .wizEvtBktTit .txt > span {font-size: 13px;}
+    #wizWrp .typ1Img .typImg {width: 33.3%;}
+
+    #wizWrp .caution > p {font-size: 14px; padding-left: 25px;}
+
+    #wizWrp .bktHowTo {flex-direction: column; align-items: center;}
+    #wizWrp .bktHowTo .lft {margin-right: 0;}
+    #wizWrp .bktHowTo .lft .tit {text-align: center;}
+    #wizWrp .bktHowTo .lft .tit > div {width: 100%; text-align: center;}
+    #wizWrp .bktHowTo .lft .tit > div img {width: 70%;}
+    #wizWrp .bktHowTo .lft .tit > span {font-size: 15px;}
+    #wizWrp .bktHowLst::before {height: 14%; right: -5px; bottom: -14%;}
+    #wizWrp .bktHowLst > li .stp {padding: 15px; font-size: 20px; line-height: 1.3; font-weight: 700;}
+    #wizWrp .bktHowLst > li > p {font-size: 15px; line-height: 25px; padding: 15px;}
+    
+}
+
+
+@media screen and (max-width:480px) {
+    /* 모바일 br */
+    #wizWrp .mobEnter{display: block;}
+
+    /* 헤더 */
+    #wizWrp #header {left:20px; top:15px; right:20px;}
+    
+    
+    /* 사이드 */
+    #wizWrp #aside {left:10px; bottom:15px; right:20px;}
+
+
+
+    /* 메인 비쥬얼 */
+    #wizWrp #contents .wizMain .mainBannerTtl {margin-left: -165px; bottom: 68%; height: 111px;}
+    #wizWrp #contents .wizMain .mainBannerBg {height: 300px; background-position: 88% center;}
+
+
+    /* simple & easy 섹션 */
+    #wizWrp .vertiVideo {width: 50%;}
+    #wizWrp .vertiVideo::before {height: 40%; left: -20%;}
+    #wizWrp .vertiVideo::after {max-width: 56%; right: -5px; bottom: -17%;}
+    #wizWrp .vertiVideo .vdThm01 button{max-width: 65px;}
+
+    /* 문구 "나도 모르게 알아서 사라지는 ~ ", "bio food processor ~ " */
+    #wizWrp .sentence01 {font-size: 14px; letter-spacing: 0.05rem; line-height: 20px; margin: 40px 20px;}
+    #wizWrp .sentence02 {font-size: 14px; letter-spacing: 0.1rem; line-height: 20px; margin: 40px 20px;}
+
+    /* SNS 인스타 섹션 */
+    #wizWrp .wizSnsTit {font-size: 22px; line-height: 1.5;}
+    #wizWrp #contents .wizSns ul:before {width: 120px; height: 120px; right: -40px; top: -35px;}
+    #wizWrp #contents .wizSns li {margin-top: 20px;}
+    #wizWrp #contents .wizSns .wizInsta {padding: 14% 0 8%;}
+    #wizWrp #contents .wizSns .insta_txt strong {font-size: 16px; line-height: 25px; padding: 3% 0 2%;}
+    #wizWrp #contents .wizSns .insta_txt p {font-size: 14px; line-height: 25px;}
+
+    /* MY Sweet RECYCLE Life 섹션 */
+    #wizWrp .wizFnc {padding: 10% 0;}
+    #wizWrp .subTit {font-size: 22px; line-height: 26px; margin: 15px 0 22px;}
+    #wizWrp .wizFncLst > li {width: 100%; padding: 30px 15px; margin-right: 0; margin-bottom: 10px; box-shadow: 0px 0px 40px 0px rgb(202 202 202 / 20%)}
+    #wizWrp .wizFncLst > li:first-child {margin-top: 0;}
+    #wizWrp .wizFncLst > li:nth-child(2) {margin-top: 0; margin-right: 0;}
+    #wizWrp .wizFncLst > li:nth-child(3) {margin-top: 0;}
+    #wizWrp .wizFncLst > li:last-child {margin-top: 0; margin-bottom: 0;}
+    #wizWrp .wizFncLst > li .tit {font-size: 20px; line-height: 30px; margin-bottom: 5%;}
+    #wizWrp .wizFncLst > li .txt {font-size: 16px; line-height: 30px;}
+    /* wiz 3Color */
+    #wizWrp .wizFncColor {margin-top: 45px; flex-direction: column;}
+    #wizWrp .wizFncColor .leftBx {margin-right: 0; margin-bottom: 15px;}
+    #wizWrp .wizFncColor .clrTxt strong {font-size: 26px;}
+    #wizWrp .wizFncColor .clrTxt em {font-size: 18px;}
+    #wizWrp .wizFncColor .clrImg {width: 100%; text-align: right;}
+    #wizWrp .wizFncColor .clrImg img {width: 81%;}
+
+    /* 이벤트 섹션 */
+    #wizWrp .evtCnts {padding: 50px 0;} 
+    #wizWrp .wizEvtTxt .tit {font-size: 22px; line-height: 32px; }
+    #wizWrp .wizEvtTxt .tit > i {padding: 2%; vertical-align: middle; margin-bottom: 5px;}
+    #wizWrp .wizEvtTxt .subTxt {font-size: 18px; line-height: 30px; margin-bottom: 10px;}
+    #wizWrp .wizEvtTxt .date {margin-bottom: 50px;}
+    #wizWrp .wizEvtTxt .date mark {font-size: 20px; line-height: 1;}
+    #wizWrp .wizEvtTxt .date mark::before {height: 6px;}
+    /* #wizWrp .wizEvtTyp > p {margin-bottom: -30px;} */
+    #wizWrp .wizEvtTyp > p > strong {font-size: 22px; line-height: 30px;}
+    #wizWrp .wizEvtTyp > p > span {font-size: 16px;}
+
+    #wizWrp .wizEvtTyp .typImg {max-width: 100%; width: 100%;}
+    #wizWrp .typ1Img::before {width: 100%; height: 20%;}
+
+    #wizWrp .wizEvtTyp > ul {display: block;}
+    #wizWrp .wizEvtTyp > ul > li {margin-top: -30px;}
+    #wizWrp .wizEvtTyp > ul > li::before {right: 50%; bottom: 2%; top: auto; transform: translateX(50%);}
+
+    #wizWrp .caution > p {font-size: 14px; margin-top: -25px; margin-left: 0; padding-left: 25px;}
+    #wizWrp .caution > p::before {width: 16px; height: 16px; padding: 0; top: 3px;}
+
+    #wizWrp .wizEvtBktTit {margin: 50px auto;}
+    #wizWrp .wizEvtBktTit .tit {margin-bottom: 20px;}
+    #wizWrp .wizEvtBktTit .tit > img {width: 210px;}
+    #wizWrp .wizEvtBktTit .txt {font-size: 18px;}
+    #wizWrp .wizEvtBktTit .txt > span {font-size: 16px;}
+
+    #wizWrp .bktHowTo {display: block;}
+    #wizWrp .bktHowTo .lft {max-width: 100%; width: 100%; margin-right: 0; text-align: center;}
+    #wizWrp .bktHowTo .lft > img {max-width: 200px;}
+    #wizWrp .bktHowTo .lft .tit {text-align: center; margin-bottom: 30px;}
+    #wizWrp .bktHowTo .lft .tit > div {max-width: 100%; width: 100%; text-align: center;}
+    #wizWrp .bktHowTo .lft .tit > div > img {width: 135px;}
+    #wizWrp .bktHowTo .lft .tit > span {font-size: 24px; line-height: 32px; margin-top: 5px;}
+
+    #wizWrp .bktHowLst {display: block; max-width: 260px; margin: 4.2% auto 0;}
+    #wizWrp .bktHowLst::before {height: 4%; right: 0; bottom: -4%;}
+    #wizWrp .bktHowLst > li {width: 100%; margin-bottom: 10px;}
+    #wizWrp .bktHowLst > li:last-child {margin-bottom: 0;}
+    #wizWrp .bktHowLst > li .stp {padding: 15px 25px; font-size: 20px; line-height: 30px;}
+    #wizWrp .bktHowLst > li > p {padding: 15px 25px; font-size: 16px; line-height: 30px;}
+
+    #wizWrp .wizEvtCaution {padding: 50px 0;}
+    #wizWrp .wizEvtCaution h3 {font-size: 20px; margin-top: 25px; margin-bottom: 10px;}
+    
+    /* table contents */
+    #wizWrp .cautonTbl h4 {font-size: 16px; line-height: 25px; margin-bottom: 10px;}
+    #wizWrp .cautonTbl.cautonTbl01 table {width: 100%;}
+    /* #wizWrp .cautonTbl table tr th {font-size: 13px; padding: 5px;}
+    #wizWrp .cautonTbl table tr td {font-size: 13px; padding: 5px;} */
+}
+
+@media screen and (max-width:320px) {
+    #wizWrp #contents .wizMain .mainBannerTtl { margin-left: -132px;}
+    #wizWrp #contents .wizMain .mainBannerBg {height: 280px;}
+}
